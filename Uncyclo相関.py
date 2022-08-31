@@ -15,7 +15,7 @@ for elem in obj :
 
 obj.reverse()
 
-f2 = open('./out_per_u.txt', 'w', encoding='UTF-8')
+f2 = open('./out_per_uncyclo.txt', 'w', encoding='UTF-8')
 f3 = open('./kanjilist.txt', 'r', encoding='UTF-8')
 kanjilist = [f3.read().split(",")]
 print(f3.read())
@@ -61,4 +61,4 @@ print(df.corr())
 fig, ax = plt.subplots()
 ax.boxplot((elemperlist))
 plt.show()
-fig.savefig("H2report_boxplot_u.png")
+fig.savefig("UncycloBoxplot.png")
